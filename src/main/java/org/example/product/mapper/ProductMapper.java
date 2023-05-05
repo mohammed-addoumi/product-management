@@ -1,11 +1,10 @@
 package org.example.product.mapper;
 
+import java.util.List;
 import org.example.product.api.ProductDto;
 import org.example.product.domain.Product;
 import org.mapstruct.Mapper;
 import org.mapstruct.factory.Mappers;
-
-import java.util.List;
 
 @Mapper(componentModel = "spring")
 public interface ProductMapper {

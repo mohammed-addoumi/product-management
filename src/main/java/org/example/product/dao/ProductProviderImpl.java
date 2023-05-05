@@ -1,10 +1,9 @@
 package org.example.product.dao;
 
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.example.product.domain.Product;
 import org.springframework.stereotype.Repository;
-
-import java.util.List;
 
 @Repository
 @RequiredArgsConstructor
