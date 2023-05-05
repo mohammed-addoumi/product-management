@@ -18,7 +18,7 @@ pipeline {
         }
         stage('Build Docker Image') {
             steps {
-                sh 'docker build -t product-management-app .'
+                sh '/usr/local/bin/docker build -t product-management-app .'
             }
         }
     }
