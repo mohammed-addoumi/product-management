@@ -1,8 +1,7 @@
 package org.example.product.dao;
 
-import org.example.product.domain.Product;
-
 import java.util.List;
+import org.example.product.domain.Product;
 
 public interface ProductProvider {
 

@@ -13,10 +13,9 @@ public class ApiResponse<T> {
     private String message;
     private int code;
 
-    private ApiResponse(T body){
+    private ApiResponse(T body) {
         this.body = body;
     }
-
 
     public static <T> ApiResponse<T> ok(T body) {
         return new ApiResponse<>(body);

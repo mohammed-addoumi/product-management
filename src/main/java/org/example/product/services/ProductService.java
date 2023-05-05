@@ -1,12 +1,11 @@
 package org.example.product.services;
 
+import java.util.List;
 import lombok.RequiredArgsConstructor;
 import org.example.product.command.ProductCommand;
 import org.example.product.dao.ProductProvider;
 import org.example.product.domain.Product;
 import org.springframework.stereotype.Service;
-
-import java.util.List;
 
 @Service
 @RequiredArgsConstructor
