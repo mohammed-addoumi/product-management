@@ -1,0 +1,30 @@
+# Compiled class files
+*.class
+
+# Log files
+*.log
+
+# Build output directories
+/build/
+
+# Maven build files
+/target/
+/.mvn/
+
+# IDE files
+/.idea/
+*.iml
+*.ipr
+*.iws
+
+# macOS files
+.DS_Store
+
+# Windows files
+Thumbs.db
+desktop.ini
+
+# Other common files
+.settings/
+.classpath
+.project
