@@ -16,5 +16,10 @@ pipeline {
                 sh '/usr/local/Cellar/maven/3.8.4/libexec/bin/mvn package'
             }
         }
+        stage('Build Docker Image') {
+            steps {
+                sh 'docker build -t product-management-app .'
+            }
+        }
     }
 }
