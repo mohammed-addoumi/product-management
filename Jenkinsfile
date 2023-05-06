@@ -23,5 +23,16 @@ pipeline {
                 sh '/usr/local/bin/docker push mohammedaddoumi/product-management-app'
             }
         }
+        stage('Kubernetes Deployment') {
+            steps {
+                sh 'kubectl apply -f kubernetes/deployment.yaml'
+            }
+        }
+
+        stage('Kubernetes Service') {
+            steps {
+                sh 'kubectl apply -f kubernetes/service.yaml'
+            }
+        }
     }
 }

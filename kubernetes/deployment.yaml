@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: product-management-deployment
+  labels:
+    app: product-management
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: product-management
+  template:
+    metadata:
+      labels:
+        app: product-management
+    spec:
+      containers:
+        - name: product-management
+          image: docker.io/mohammedaddoumi/product-management-app
+          ports:
+            - containerPort: 8080
+      imagePullSecrets:
+        - name: my-dockerhub-creds
